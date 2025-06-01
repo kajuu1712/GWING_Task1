@@ -1,0 +1,252 @@
+*{
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+ 
+
+/* -------------- NAVBAR ------------------ */
+
+.navbar {
+    background-color: rgb(255, 247, 247) !important;
+}
+
+.navbar-brand {
+    color: #ffffff !important;
+    font-weight: bold;
+    text-shadow:
+        -1px -1px 0 red,
+         1px -1px 0 red,
+        -1px  1px 0 red,
+         1px  1px 0 red;
+}
+.navbar-nav .end{
+    opacity: 0.7 !important;
+}
+
+.navbar-nav .end:hover{
+    opacity: 1 !important;
+}
+
+
+.navbar .dropdown-toggle::after {
+  display: none;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar .nav-link:hover {
+  color: #000;
+}
+
+
+/*--------- MAIN ------------*/
+main {
+    flex: 1; 
+}
+/* 
+
+/* Parent flex container */
+.banners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* allows wrapping on small screens */
+}
+
+/* Image wrapper */
+.img-banner {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.img-banner img {
+    width: 100%;
+}
+
+/* Text wrapper */
+.banner-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+}
+.red-banner {
+    width: 100%;
+    height: 3rem;
+    background-color: red;
+    padding: 10px;
+}
+
+/* Individual banners */
+.red-banner h1 {
+    font-size: 1.5rem;
+    color: white;
+    
+}
+
+.customer-banner h2 {
+    font-size: 1.4rem;
+    color: #333;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .banners {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .red-banner h1 {
+        font-size: 1.2rem;
+    }
+
+    .customer-banner h2 {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* ---------- FOOTER --------- */
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #f2f2f2;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.footer-outer-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.items-box {
+    flex: 1 1 22%; 
+    min-width: 200px;
+    text-align: center;
+    font: small-caption
+}
+
+.items-box ul {
+    list-style: none;
+    padding: 0;
+}
+.items-box ul li {
+  font-size: 1rem;
+  font-weight: 900;
+  opacity: 0.8;
+}
+.items-box ul li:hover {
+  opacity: 1;
+}
+
+.items-box h5 {
+    margin-bottom: 10px;
+    color: red;
+    font-weight: 600;
+}
+
+
+.get-app {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.get-app button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.get-app img {
+    width: 120px;   
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.get-app img:hover {
+    transform: scale(1.05); 
+}
+.follow-us {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 24px;
+}
+
+.social-links i {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-links i:hover {
+    transform: translateY(-4px);
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+@media (max-width: 992px) {
+    .items-box {
+        flex: 1 1 45%; 
+    }
+}
+
+
+@media (max-width: 600px) {
+    .items-box {
+        flex: 1 1 100%; 
+    }
+
+    .get-app {
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    .social-links {
+      display: flex;
+      justify-content: end;
+      padding-right: 2rem;
+    }
+    .follow-us {
+      justify-content: end;
+      padding-right: 2rem;
+    }
+}
+
+
